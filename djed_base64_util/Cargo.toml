@@ -1,0 +1,10 @@
+[package]
+name = "djed_base64_util"
+version = "0.1.0"
+authors = ["Djedou <djedouarnaud.aman@gmail.com>"]
+
+[lib]
+name = "djed_base64_util"
+
+[dependencies]
+base64 = "0.13.0"

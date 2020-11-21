@@ -1,0 +1,23 @@
+[package]
+name = "djed_rsx_resources"
+version = "0.1.0"
+authors = ["Djedou <djedouarnaud.aman@gmail.com>"]
+
+[lib]
+name = "djed_rsx_resources"
+
+[features]
+
+image-dummy-decode = ["djed_rsx_images/image-dummy-decode"]
+image-rgb-to-bgr = ["djed_rsx_images/image-rgb-to-bgr"]
+pretty-json-mode = ["djed_rsx_resource_updates/pretty-json-mode"]
+
+[dependencies]
+djed_rsx_files = { path = "../djed_rsx_files", default-features = false }
+djed_rsx_fonts = { path = "../djed_rsx_fonts", default-features = false }
+djed_rsx_images = { path = "../djed_rsx_images", default-features = false }
+djed_rsx_resource_updates = { path = "../djed_rsx_resource_updates", default-features = false }
+djed_rsx_shared = { git = "https://github.com/djedou/djed_rsx_shared.git", default-features = false }
+
+[dev-dependencies]
+djed_base64_util = { path = "../djed_base64_util", default-features = false }

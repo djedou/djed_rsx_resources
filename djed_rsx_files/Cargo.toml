@@ -1,0 +1,11 @@
+[package]
+name = "djed_rsx_files"
+version = "0.1.0"
+authors = ["Djedou <djedouarnaud.aman@gmail.com>"]
+
+[lib]
+name = "djed_rsx_files"
+
+[dependencies]
+fnv = "1.0.7"
+djed_rsx_shared = { git = "https://github.com/djedou/djed_rsx_shared.git", default-features = false }

@@ -1,0 +1,24 @@
+[package]
+name = "djed_rsx_fonts"
+version = "0.1.0"
+authors = ["Djedou <djedouarnaud.aman@gmail.com>"]
+
+[lib]
+name = "djed_rsx_fonts"
+
+[features]
+
+[dependencies]
+djed_base64_util = { path = "../djed_base64_util" }
+bitflags = "1.2.1"
+fnv = "1.0.7"
+#freetype = { version = "0.7.0" }
+djed_rsx_resource_updates = { path = "../djed_rsx_resource_updates", default-features = false }
+djed_rsx_shared = { git = "https://github.com/djedou/djed_rsx_shared.git", default-features = false }
+
+serde = { version = "1.0.117", features = ["rc"] }
+serde_derive = "1.0.117"
+uuid = { version = "0.8.1", features = ["v4"] }
+
+[dev-dependencies]
+djed_rsx_resource_updates = { path = "../djed_rsx_resource_updates" }

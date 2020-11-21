@@ -1,0 +1,22 @@
+[package]
+name = "djed_rsx_images"
+version = "0.1.0"
+authors = ["Djedou <djedouarnaud.aman@gmail.com>"]
+
+[lib]
+name = "djed_rsx_images"
+
+[features]
+image-dummy-decode = []
+image-rgb-to-bgr = []
+
+[dependencies]
+djed_base64_util = { path = "../djed_base64_util" }
+fnv = "1.0.7"
+image = "0.18.0"
+#imageproc = "0.22.0"
+djed_rsx_resource_updates = { path = "../djed_rsx_resource_updates", default-features = false }
+djed_rsx_shared = { git = "https://github.com/djedou/djed_rsx_shared.git", default-features = false, features = ["impl-external-image"] }
+serde = "1.0.117"
+serde_derive = "1.0.117"
+uuid = { version = "0.8.1", features = ["v4"] }

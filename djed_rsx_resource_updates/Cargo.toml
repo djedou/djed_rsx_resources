@@ -1,0 +1,17 @@
+[package]
+name = "djed_rsx_resource_updates"
+version = "0.1.0"
+authors = ["Djedou <djedouarnaud.aman@gmail.com>"]
+
+[lib]
+name = "djed_rsx_resource_updates"
+
+[features]
+pretty-json-mode = []
+
+[dependencies]
+djed_base64_util = { path = "../djed_base64_util" }
+djed_rsx_shared = { git = "https://github.com/djedou/djed_rsx_shared.git", default-features = false }
+serde = { version = "1.0.117", features = ["rc"] }
+serde_derive = "1.0.117"
+serde_json = "1.0.59"

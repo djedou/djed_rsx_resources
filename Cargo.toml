@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    "djed_base64_util",
+    "djed_rsx_files",
+    "djed_rsx_images",
+    "djed_rsx_fonts",
+    "djed_rsx_resource_updates",
+    "djed_rsx_resources"
+]
